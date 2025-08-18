@@ -1,0 +1,449 @@
+---
+import Layout from '../layouts/Layout.astro';
+import videoImg from '../assets/video2.webp';
+import FourYearImage from '../assets/testdoc.webp';
+import BannerImage from '../assets/academicbg.webp';
+import nextarrow from '../assets/next.webp';  
+import pgmimg from '../assets/program.webp';
+import md4Icon from "../assets/medicinesign.webp";
+import premedIcon from "../assets/groupdoc.webp"; 
+import texilaLogo from "../assets/tau.webp";
+import gphcImg from "../assets/build1.webp"; // Georgetown Public Hospital
+import tucsonImg from "../assets/build2.webp"; 
+import academicsVideo from "../assets/academicsvideo.mp4";
+---
+
+<Layout>
+<section class="relative w-full mt-10 pt-12 bg-no-repeat object-contain bg-cover bg-white md:bg-transparent academics-section">
+  <div class="w-full mx-auto px-4 md:px-6 md:py-10 h-full">
+    <div class="grid md:grid-cols-2 items-center h-full">
+      <!-- Left Column -->
+      <div class="text-[#16418E] md:ml-15 ml-0">
+        <h1 class="text-xl md:text-4xl w-[60%] md:w-[95%] font-semibold mb-4 leading-relaxed text-shadow-custom">
+          TEXILA. <br /> MD and Premed Programs.
+        </h1>
+        <h3 class="text-sm md:text-xl font-semibold !text-black mb-6">
+          For Students. For Doctors.
+        </h3>
+ <p class="bg-[#D4D9EE] border-r-4 md:border-r-0 pl-4 text-sm mt-[34px] md:text-base py-2 px-2 border-l-4 border-[#3664B7] text-start md:bg-none md:[background:linear-gradient(to_right,#D4D9EE,#D4D9EE00)]">Discover the campus and learn more about life in Guyana</p>
+  
+         <a
+    href="https://apply.tauedu.org/gy/caribbean-medical-schools/contact/"
+    class="inline-flex mt-6 md:my-8 items-center gap-1 bg-gradient-to-r from-[#3663B6] to-[#16418E] hover:brightness-105 text-white border-b-4 border-[#FFE44D] text-base px-6 py-3 rounded-md"
+  >
+    Schedule a Call
+  </a>
+      </div>
+
+      <!-- Right Column -->
+      <div></div>
+    </div>
+  </div>
+</section>
+
+ <!-- pgm details -->
+<section>
+<div class="bg-white py-8 md:py-16">
+  <div class="max-w-7xl mx-auto px-4">
+   
+
+  <div class="grid md:grid-cols-2 gap-6 items-center">
+    <img src={FourYearImage.src} alt="4 Years MD" class="rounded" />
+    <div class="md:text-start">
+      <h3 class="text-xl md:text-2xl font-semibold mb-2">Our Medical Programs</h3>
+    <p class=" text-base md:text-lg font-semibold border-b-[2px] border-b-gray-400 inline-block pb-3">
+  MD and Premed Pathways
+</p>
+ <p class="my-2 text-base md:text-lg font-semibold">
+  We’re proud of the doctors from Texila!
+</p>
+
+      <p class="leading-loose text-sm md:text-base">
+      For over a decade, the Texila American University in Guyana has prioritized small class sizes, personal academic support, and a commitment to delivering quality education on par with U.S. and Canadian medical schools. We have two academic pathways for future physicians: the Premed Program and the Doctor of Medicine (M.D.) program. </p>
+
+    <a
+    href="https://apply.tauedu.org/gy/caribbean-medical-schools/contact/"
+    class="inline-flex my-8 items-center gap-1 bg-gradient-to-r from-[#3663B6] to-[#16418E] hover:brightness-105 text-white border-b-4 border-[#FFE44D] text-base px-6 py-3 rounded-md"
+  >
+    Apply Now
+  </a>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<script is:inline>
+  function showTab(tab) {
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+    document.querySelectorAll('.tab-button').forEach(el => {
+      el.classList.remove('border-b-2', 'border-blue-600', 'text-blue-600', 'font-medium');
+      el.classList.add('text-gray-600');
+    });
+    document.getElementById(`content-${tab}`).classList.remove('hidden');
+    const btn = document.getElementById(`tab-${tab}`);
+    btn.classList.remove('text-gray-600');
+    btn.classList.add('border-b-2', 'border-blue-600', 'text-blue-600', 'font-medium');
+  }
+</script>
+</section>
+
+  <!-- CurriculumSection -->
+<section>
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 relative">
+    
+    <!-- Column 1 -->
+    <div class="bg-[#16418E] text-white p-8 md:p-12">
+      <h1 class="text-2xl md:font-semibold md:text-4xl mb-3 text-[#FFE44D]">+Premed</h1>
+       <p class="font-semibold text-xl my-3">5.5-year Premed/MD Program </p>
+      <span class="text-lg">Minimum HS diploma.</span>
+      <hr class="my-6 text-xl">
+      <p class="text-sm md:text-base leading-loose">High School graduates and college non-STEM students can choose this path. </p>
+       <img src={nextarrow.src} alt="nextarrow"  class="float-right my-3 md:mt-14" />
+    </div>
+
+    <!-- Column 2 -->
+    <div class="relative bg-[#3664B7] text-white p-8 md:p-12">
+      <h1 class="text-2xl md:font-semibold md:text-4xl mb-3 text-[#FFE44D]">+MD</h1>
+      <p class="font-semibold text-xl my-3">4-year MD program</p>
+      <span class="text-lg">Minimum 90 credits.</span>
+      <hr class="my-6 text-xl">
+      <p class="text-sm md:text-base leading-loose">High School graduates and college non-STEM students can choose this path.</p>
+        <img src={nextarrow.src} alt="nextarrow"  class="float-right  my-3 md:mt-14" />
+    </div>
+
+    <!-- Column 3 -->
+    <div class="relative bg-[#16418E] text-white p-8 md:p-12">
+      <h1 class="text-2xl md:font-semibold md:text-4xl mb-3 text-[#FFE44D]">+AdReq</h1>
+       <p class="font-semibold text-xl my-3">Admission Requirements</p>
+      <span class="text-lg">Online Application.</span>
+      <hr class="my-6 text-xl">
+      <p class="text-sm md:text-base leading-loose">All students must complete the admissions process to get a decision.  </p>
+        <img src={nextarrow.src} alt="nextarrow"  class="float-right my-3 md:mt-14" />
+    </div>
+
+    <!-- Column 4 -->
+</section>
+
+  <!-- Our Curriculum -->
+<section class="w-full bg-white px-4 py-8 md:py-16">
+     <h2 class="text-2xl md:text-3xl font-semibold text-center text-dark">
+  Texila Experience
+</h2>
+<p class="max-w-5xl mx-auto text-center my-4 md:my-8 text-sm md:text-base leading-relaxed text-gray-700"> Check out the TAU curriculum and academic calendar</p>
+
+
+  <div class="max-w-3xl mx-auto">
+   
+    <div class="space-y-4">
+      {[
+        {
+          question: 'Basic Science',
+          answer: 'Texila offers global talent recruitment solutions, connecting skilled professionals with international job opportunities.'
+        },
+        {
+          question: 'Clinical Sciences',
+          answer: 'No, we do not charge any registration or placement fees from candidates.'
+        },
+        {
+          question: 'Academic Calendar',
+          answer: 'Qualified professionals such as nurses, doctors, and technicians with valid credentials can apply.'
+        },
+      
+      ].map(({ question, answer }, index) => (
+        <div class="border border-[#555497] rounded-md bg-[#F9F9F9]">
+          <button
+            type="button"
+            class="w-full px-4 py-3 flex justify-between items-center cursor-pointer text-sm md:text-base text-left text-gray-800 focus:outline-none faq-toggle"
+            onclick={`toggleFAQ(${index})`}
+          >
+            <span>{question}</span>
+            <svg
+              class="w-5 h-5 text-[#555497] transition-transform transform rotate-0 faq-arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id={`faq-${index}`} class="hidden px-4 pb-4 text-gray-600 text-sm">
+            {answer}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <script is:inline>
+    function toggleFAQ(index) {
+      document.querySelectorAll('.faq-toggle').forEach((button, i) => {
+        const answer = document.getElementById(`faq-${i}`);
+        const arrow = button.querySelector('.faq-arrow');
+        const isCurrent = i === index;
+
+        if (isCurrent) {
+          const isOpen = !answer.classList.contains('hidden');
+          answer.classList.toggle('hidden', isOpen);
+          arrow.classList.toggle('rotate-180', !isOpen);
+        } else {
+          answer.classList.add('hidden');
+          arrow.classList.remove('rotate-180');
+        }
+      });
+    }
+  </script>
+</section>
+
+<!-- Program img -->
+<section class="max-w-7xl mx-auto px-4">
+  <img src={pgmimg.src} alt="pgmimg" class="w-full h-auto object-contain" />
+</section>
+
+<!-- 4,5 pgm -->
+<section class="mt-8 md:mt-16">
+  <div class="grid grid-cols-1 md:grid-cols-2">
+    
+    <!-- Left Column: 4-Year MD Program -->
+    <div class="bg-[#16418E] flex justify-end">
+      <div class="text-white max-w-xl p-8 md:p-12">
+        <div class="flex items-center mb-6">
+          <img src={md4Icon.src} alt="4-Year MD Icon"
+               class="w-16 h-16 border border-[#FFE44D] rounded-full p-1 bg-[#16418E] z-10" />
+          <span class="ml-[-8px] bg-[#FFE44D] text-[#16418E] font-semibold px-4 py-1 rounded">
+            4–Year MD Program
+          </span>
+        </div>
+        <p class="text-sm md:text-base leading-relaxed">
+          This pathway is primarily designed for students from the US and Canada who have 
+          completed premedical coursework, accumulating at least 90 credit hours toward 
+          their undergraduate degree. Prospective students must have completed prerequisite 
+          courses in science, English, and mathematics to qualify. However, applicants from 
+          other regions are also eligible and will be assessed based on their undergraduate 
+          coursework. The program includes 5 semesters of basic science coursework at the 
+          Guyana campus and 4 semesters of clinical science coursework, which can be 
+          completed either in Guyana or the USA.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right Column: 5.5-Year Premed/MD Program -->
+    <div class="bg-[#2763C4] flex justify-start">
+      <div class="text-white max-w-xl p-8 md:p-12">
+        <div class="flex items-center mb-6">
+          <img src={premedIcon.src} alt="5.5-Year Premed Icon"
+               class="w-16 h-16 border border-[#FFE44D] rounded-full p-1 bg-[#16418E] z-10" />
+          <span class="ml-[-8px] bg-[#FFE44D] text-[#16418E] font-semibold px-4 py-1 rounded">
+            5.5–year Premed/MD Program
+          </span>
+        </div>
+        <p class="text-sm md:text-base leading-relaxed">
+          The combined premed plus MD program is a 5.5–year MD pathway designed for students 
+          who have completed the necessary coursework in the Caribbean CSEC, British 'O' level, 
+          secondary education from African countries, or a high school diploma from the US or 
+          Canada. This program offers college-level science and other required courses, enabling 
+          students to accelerate their career plans by completing all medical prerequisite courses 
+          in three semesters over 18 months. Upon completion of the premed program, students 
+          matriculate into the 4–year MD Program.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- tau -->
+ <section class="bg-[#EBEDF8] md:py-16 py-8 px-6">
+  <h2 class="text-2xl md:text-3xl font-semibold text-center text-dark mb-4 md:mb-8">
+    The Benefits of a Texila Education
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto">
+    <!-- Left Column -->
+    <ul class="space-y-4">
+      <li class="bg-gradient-to-l from-[#FFE168] to-transparent text-[#2F2E67] font-medium px-4 py-2 rounded-l-lg border-r-4 border-[#16418E] md:float-right">
+        U.S. Based Clinical Campus
+      </li>
+      <li class="bg-gradient-to-l from-[#FFE168] to-transparent text-[#2F2E67] font-medium px-4 py-2 rounded-l-lg border-r-4 border-[#16418E] md:float-right">
+        High Performance in Licensing Exams
+      </li>
+      <li class="bg-gradient-to-l from-[#FFE168] to-transparent text-[#2F2E67] font-medium px-4 py-2 rounded-l-lg border-r-4 border-[#16418E] md:float-right">
+        Low Student to Faculty Ratio
+      </li>
+      <li class="bg-gradient-to-l from-[#FFE168] to-transparent text-[#2F2E67] font-medium px-4 py-2 rounded-l-lg border-r-4 border-[#16418E] md:float-right">
+        Unique Program Curriculum
+      </li>
+    </ul>
+
+    <!-- Logo (only on md and above) -->
+    <div class="hidden md:flex justify-center">
+      <img src={texilaLogo.src} alt="Texila Logo" class="max-w-[150px] md:max-w-[200px] lg:max-w-[250px]" />
+    </div>
+
+    <!-- Right Column -->
+    <ul class="space-y-4">
+      <li class="bg-gradient-to-r from-[#FFE168] to-transparent text-[#2F2E67] font-medium px-4 py-2 rounded-r-lg border-l-4 border-[#16418E]">
+        Accreditation
+      </li>
+      <li class="bg-gradient-to-r from-[#FFE168] to-transparent text-[#2F2E67] font-medium px-4 py-2 rounded-r-lg border-l-4 border-[#16418E]">
+        Affordable Tuition
+      </li>
+      <li class="bg-gradient-to-r from-[#FFE168] to-transparent text-[#2F2E67] font-medium px-4 py-2 rounded-r-lg border-l-4 border-[#16418E]">
+        Hospital-Based Training
+      </li>
+      <li class="bg-gradient-to-r from-[#FFE168] to-transparent text-[#2F2E67] font-medium px-4 py-2 rounded-r-lg border-l-4 border-[#16418E]">
+        State-Of-The-Art Facilities
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Campus -->
+<section class="bg-white py-8 md:py-16">
+  <div class="max-w-7xl mx-auto px-4">
+     <h2 class="text-2xl md:text-3xl font-semibold text-center text-dark mb-4 md:mb-8">
+      TAU Clinical Campuses
+    </h2>
+    <p class="text-center mb-12 max-w-4xl mx-auto">
+      Our clinics provide students with invaluable clinical training experience across various specialties.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 flex items-center mb-8 md:mb-16">
+  {/* Image column */}
+  <div class="bg-[#3664B7] text-white rounded-lg p-6 flex flex-col items-center md:col-span-5">
+    <h3 class="text-xl font-semibold mb-4 text-center">
+      Georgetown Public Hospital Corporation
+    </h3>
+    <img
+      src={gphcImg.src}
+      alt="Georgetown Public Hospital"
+      class="w-full h-auto rounded"
+    />
+  </div>
+
+  {/* Content column */}
+  <div class="text-gray-800 md:col-span-7 flex items-center">
+    <div>
+      <p class="text-sm md:text-base leading-relaxed md:leading-loose">
+        <strong>Georgetown Public Hospital (GPHC),</strong> in Georgetown, Guyana, is the country’s largest hospital.
+        GPHC is the main teaching hospital in Guyana and serves both a regional public hospital
+        and as the national referral hospital. Its Seaman’s Ward, the oldest section, was constructed in
+        1832. The hospital is government-run with a capacity of 600 beds. GPHC’s emergency department
+        has an estimated annual volume of 75,000.
+      </p>
+      <p class="text-sm md:text-base leading-relaxed mt-4">
+        Guyana’s first open-heart surgery was performed at GPHC’s Caribbean Heart Institute in 2007.
+        In 2008, the first kidney transplant operation in Guyana was performed at GPHC by US Army medical
+        professionals for training and humanitarian purposes.
+      </p>
+      <p class="text-sm md:text-base leading-relaxed mt-4">
+        All its postgraduate training programs are recognized by the Ministry of Health, Guyana.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+      {/* Tucson Medical Center */}
+   <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center flex md:[direction:rtl]">
+      <div class="bg-[#3664B7] text-white rounded-lg p-6 flex flex-col items-center md:col-span-5">
+    <h3 class="text-xl font-semibold mb-4 text-center">
+      Tucson Medical Center
+    </h3>
+    <img
+      src={tucsonImg.src}
+      alt="Georgetown Public Hospital"
+      class="w-full h-auto rounded"
+    />
+  </div>
+  {/* Left column (on desktop, reversed order) */}
+  <div class="text-gray-800 md:[direction:ltr] md:col-span-7">
+    <p class="text-sm md:text-base leading-relaxed md:leading-loose">
+      <strong>Tucson Medical Center (TMC),</strong> licensed at 641 beds, is a locally governed nonprofit regional hospital in Tucson, Arizona. The medical center treats about 30,000 inpatients and 120,000 outpatients annually as well as around 6,000 births.
+ TMC holds designation as a Neuroscience Center of Excellence, certification as a Primary Stroke Center & accreditation as a Chest Pain Center. TMC is the only hospital in Southern Arizona to be chosen for the Thomson Reuters list of the 50 Top Cardiovascular Hospitals in the US for 2011. The hospital is accredited by The Joint Commission and is also a member of the Mayo Clinic Network.
+
+    </p>
+    <p class="text-sm md:text-base leading-relaxed md:leading-loose mt-4">
+      As a major academic affiliate of the University of Arizona College of Medicine, TMC serves as a site for undergraduate and graduate medical education for the Tucson Hospitals Medical Education Program (THMEP). Since 1963, the THMEP has conducted graduate and continuing medical education programs at Tucson Medical Center and throughout the area. Initially created as a consortium of physician groups, TMC, and other regional hospitals, THMEP is a major provider of graduate and continuing medical education in the Southern Arizona region. Each of the residency and fellowship programs is accredited by the Accreditation Council for Graduate Medical Education (ACGME).
+    </p>
+  </div>
+
+  {/* Right column */}
+
+</div>
+
+    </div>
+
+    {/* CTA Section */}
+   <div class="max-w-4xl mx-auto bg-gradient-to-r from-[#16418E] via-[#4172CA] to-[#16418E] text-white text-center p-6 rounded-xl mt-12">
+      <p class="mb-4 max-w-2xl mx-auto">
+        Ask our team about student life in Guyana, campus, clinicals, learning resources, board exam
+        preparation, and more.
+      </p>
+      <a href="https://apply.tauedu.org/gy/caribbean-medical-schools/contact/" class="bg-[#FFE44D] text-[#16418E] font-semibold px-6 py-2 rounded shadow hover:opacity-90 transition">
+        Schedule a Call
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- video section -->
+<section class="bg-[#EBEDF8] py-8 md:py-16 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+      Find Your Success at Texila
+    </h2>
+
+    <p class="text-sm md:text-base mb-8">
+      Discover the Caribbean medical school experience through students and alumni!<br />
+      Learn more about the small class sizes, early clinical experience, rotations in one location, and more!
+    </p>
+
+    <!-- Video Embed -->
+    <div class="w-full">
+      <div class="relative w-full md:w-3/4 mx-auto aspect-video">
+        <!-- Thumbnail with play button -->
+        <div id="videoThumbnail" class="absolute top-0 left-0 w-full cursor-pointer">
+          <img
+            src={videoImg.src}
+            alt="Video Thumbnail"
+            class="w-full h-full object-contain rounded-md shadow-lg"
+          />
+        </div>
+
+        <!-- Local video (hidden initially) -->
+        <video
+          id="localVideo"
+          class="absolute top-0 left-0 w-full h-full rounded-md shadow-lg hidden"
+          controls
+        >
+          <source src={academicsVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="flex justify-center">
+        <a
+          href="https://apply.tauedu.org/gy/caribbean-medical-schools/contact/"
+          class="inline-flex my-8 items-center gap-1 bg-gradient-to-r from-[#3663B6] to-[#16418E] hover:brightness-105 text-white border-b-4 border-[#FFE44D] text-base px-6 py-3 rounded-md"
+        >
+          Apply Now
+        </a>
+      </div>
+    </div>
+
+    <script is:inline>
+      const thumbnail = document.getElementById("videoThumbnail");
+      const video = document.getElementById("localVideo");
+
+      thumbnail.addEventListener("click", () => {
+        thumbnail.classList.add("hidden");
+        video.classList.remove("hidden");
+        video.play(); // autoplay video
+      });
+    </script>
+  </div>
+</section>
+</Layout>

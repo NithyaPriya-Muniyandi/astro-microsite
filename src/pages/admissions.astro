@@ -1,0 +1,226 @@
+---
+import BannerImage from '../assets/admisions-banner.webp';
+import Layout from '../layouts/Layout.astro';
+import Medical from '../assets/medical.webp';
+import study from '../assets/studystd.webp';
+import point from '../assets/rightupblue.webp';
+import icon1 from '../assets/approved.webp';
+import icon2 from '../assets/file.webp';
+import icon3 from '../assets/score.webp';
+import icon4 from '../assets/staticlist.webp';
+
+---
+<Layout>
+<section
+  class="relative w-full pt-12 mt-10 bg-no-repeat h-auto object-contain bg-cover bg-white md:bg-transparent admission-section">
+  <div class="w-full mx-auto px-4 md:px-6 md:py-10 h-full">
+    <div class="grid md:grid-cols-2 items-center h-full">
+      <!-- Left Column -->
+      <div class="text-[#16418E] max-w-xl md:ml-15 ml-0">
+        <h1 class="text-xl md:text-4xl w-[60%] md:w-[95%] font-semibold mb-4 leading-relaxed text-shadow-custom">
+          Start Your<br />TAU Application
+        </h1>
+ <p class="bg-[#D4D9EE] border-r-4 md:border-r-0 pl-4 text-sm mt-[34px] md:text-base py-2 px-2 border-l-4 border-[#3664B7] text-start md:bg-none md:[background:linear-gradient(to_right,#D4D9EE,#D4D9EE00)]"> Texila is seeking qualified individuals who are eager to pursue a career in business and healthcare.
+</p>
+
+  
+         <a
+    href="https://apply.tauedu.org/gy/caribbean-medical-schools/contact/"
+    class="inline-flex mt-6  md:my-8 items-center gap-1 bg-gradient-to-r from-[#3663B6] to-[#16418E] hover:brightness-105 text-white border-b-4 border-[#FFE44D] text-base px-6 py-3 rounded-md"
+  >
+    Schedule a Call
+  </a>
+      </div>
+
+      <!-- Right Column -->
+      <div></div>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-4 py-12">
+  <div class="text-center mb-6 md:mb-12">
+    <h2 class="text-2xl font-semibold flex items-center justify-center gap-2">
+      <span><img src={Medical.src}/></span> Step-by-Step Process
+    </h2>
+  </div>
+
+  <div class="relative flex flex-col md:grid grid-cols-9 mx-auto p-2 text-gray-900">
+    
+    <!-- Step 1 -->
+    <div class="flex flex-row-reverse md:contents">
+      <div class="bg-white col-start-1 col-end-5 p-4 rounded-xl leading-relaxed my-4 ml-auto shadow-md">
+        <h3 class="font-semibold text-[#16418E]">Apply Online</h3>
+        <p class="text-sm">Start by completing the online application. <br />
+          <a href="https://apply.tauedu.org/gy/caribbean-medical-schools/contact" class="text-[#16418E] font-medium">Start your application</a>
+        </p>
+      </div>
+      <div class="col-start-5 col-end-6 md:mx-auto relative mr-0 md:mr-4">
+        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#3664B7] text-white text-xl font-semibold">1</div>
+        <div class="h-full w-0.5 bg-gray-300 absolute top-12 left-1/2 -ml-px"></div>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="flex md:contents">
+     <div class="col-start-5 col-end-6 md:mx-auto relative mr-0 md:mr-4">
+        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#16418E] text-white text-xl font-semibold">2</div>
+        <div class="h-full w-0.5 bg-gray-300 absolute top-12 left-1/2 -ml-px"></div>
+      </div>
+      <div class="bg-white col-start-6 col-end-10 p-4 leading-relaxed rounded-xl my-4 mr-auto shadow-md">
+        <h3 class="font-semibold text-[#16418E]">Submit Required Documents</h3>
+        <p class="text-sm">Upload all necessary documents to complete your application file.</p>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="flex flex-row-reverse md:contents">
+      <div class="bg-white col-start-1 col-end-5 p-4 leading-relaxed rounded-xl my-4 ml-auto shadow-md">
+        <h3 class="font-semibold text-[#16418E]">Pay Application Fees</h3>
+        <p class="text-sm">Submit the standard application fee to allow for processing.</p>
+      </div>
+    <div class="col-start-5 col-end-6 md:mx-auto relative mr-0 md:mr-4">
+        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#3664B7] text-white text-xl font-semibold">3</div>
+        <div class="h-full w-0.5 bg-gray-300 absolute top-12 left-1/2 -ml-px"></div>
+      </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="flex md:contents">
+     <div class="col-start-5 col-end-6 md:mx-auto relative mr-0 md:mr-4">
+        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#16418E] text-white text-xl font-semibold">4</div>
+        <div class="h-full w-0.5 bg-gray-300 absolute top-12 left-1/2 -ml-px"></div>
+      </div>
+      <div class="bg-white col-start-6 col-end-10 p-4 leading-relaxed rounded-xl my-4 mr-auto shadow-md">
+        <h3 class="font-semibold text-[#16418E]">Eligibility Screening</h3>
+        <p class="text-sm">Our admissions team will review your application and supporting documents to ensure they are complete and that you meet the program’s requirements.</p>
+      </div>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="flex flex-row-reverse md:contents">
+      <div class="bg-white col-start-1 col-end-5 p-4 leading-relaxed rounded-xl my-4 ml-auto shadow-md">
+        <h3 class="font-semibold text-[#16418E]">Evaluation Stage</h3>
+        <p class="text-sm">Depending on the program, applicants may be required to complete an admissions test and then an interview with the committee.</p>
+      </div>
+     <div class="col-start-5 col-end-6 md:mx-auto relative mr-0 md:mr-4">
+        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#3664B7] text-white text-xl font-semibold">5</div>
+        <div class="h-full w-0.5 bg-gray-300 absolute top-12 left-1/2 -ml-px"></div>
+      </div>
+    </div>
+
+    <!-- Step 6 -->
+    <div class="flex md:contents">
+     <div class="col-start-5 col-end-6 md:mx-auto relative mr-0 md:mr-4">
+        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#16418E] text-white text-xl font-semibold">6</div>
+      </div>
+      <div class="bg-white col-start-6 col-end-10 p-4 leading-relaxed rounded-xl my-4 mr-auto shadow-md">
+        <h3 class="font-semibold text-[#16418E]">Decision</h3>
+        <p class="text-sm">Receive your official admission decision from the committee.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-[#F9F9F9]">
+    <div class="flex flex-col md:flex-row">
+      <!-- First column -->
+      <div class="w-full md:w-1/2">
+        <img src={study.src} alt="Image" class="w-full h-auto">
+      </div>
+      <!-- Second column -->
+      <div class="w-full md:w-1/2 p-8 md:p-16">
+        <h2 class="text-2xl font-semibold mb-4">We Accept Transfers</h2>
+        <ul class="list-none text-sm">
+          <li class="flex items-center mb-3 bg-gradient-to-r from-[#D4D9EE] to-[#D4D9EE00] p-2 rounded-md">
+            <img src={point.src} alt="Bullet" class="mr-2">
+            <span>Completed Online Application.  <a href="https://apply.tauedu.org/gy/caribbean-medical-schools/contact/" class="bg-[#3664B7] text-white rounded-sm p-1 ml-3 inline-block">Apply Now</a></span>
+          </li>
+          <li class="flex items-center mb-3 bg-gradient-to-r from-[#D4D9EE] to-[#D4D9EE00] p-2 rounded-md">
+            <img src={point.src} alt="Bullet" class="mr-2">
+            <span>Personal Statement (A brief explanation of your interest and experience in your chosen field; maximum 1,500 words)</span>
+          </li>
+          <li class="flex items-center mb-3 bg-gradient-to-r from-[#D4D9EE] to-[#D4D9EE00] p-2 rounded-md">
+            <img src={point.src} alt="Bullet" class="w-6 h-6 mr-2">
+            <span>Resume or Curriculum Vitae (CV)</span>
+          </li>
+           <li class="flex items-center mb-3 bg-gradient-to-r from-[#D4D9EE] to-[#D4D9EE00] p-2 rounded-md">
+            <img src={point.src} alt="Bullet" class="w-6 h-6 mr-2">
+            <span>2 Letters of Recommendation (At least one must be from an academic source)</span>
+          </li>
+           <li class="flex items-center mb-3 bg-gradient-to-r from-[#D4D9EE] to-[#D4D9EE00] p-2 rounded-md">
+            <img src={point.src} alt="Bullet" class="w-6 h-6 mr-2">
+            <span>Transcripts from all previously attended institutions</span>
+          </li>
+           <li class="flex items-center mb-3 bg-gradient-to-r from-[#D4D9EE] to-[#D4D9EE00] p-2 rounded-md">
+            <img src={point.src} alt="Bullet" class="w-6 h-6 mr-2">
+            <span>2 copies of Passport Photos</span>
+          </li>
+           <li class="flex items-center mb-3 bg-gradient-to-r from-[#D4D9EE] to-[#D4D9EE00] p-2 rounded-md">
+            <img src={point.src} alt="Bullet" class="w-6 h-6 mr-2">
+            <span>Color Copy of your Passport</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="px-5 md:px-0 py-8 md:py-16">
+  <div class="max-w-5xl mx-auto rounded-lg border border-[#9CABEA] bg-[#F8F9FD]">
+   <div class="p-5 md:py-10 flex flex-col md:flex-row items-center justify-center">
+  <div class="mb-8 md:mb-0 md:w-2/3 text-sm md:text-base leading-loose">
+    <p>Students seeking admission to the MD program are required to pass the TMAT – Texila Medical Admissions Test <strong>(or submit a MCAT score report for evaluation)</strong> and an interview process that may include multiple mini-interviews. Please refer to specific program requirements.</p>
+  </div>
+  <div class="w-full md:w-auto">
+    <a
+      href="#apply-form"
+      class="inline-flex items-center gap-1 bg-gradient-to-r from-[#3663B6] to-[#16418E] hover:brightness-105 text-white border-b-4 border-[#FFE44D] text-base px-6 py-3 rounded-md"
+    >
+      Schedule a Call
+    </a>
+  </div>
+</div>
+
+  </div>
+
+</section>
+
+<section class="mx-w-full mx-auto">
+  <h2 class="text-2xl font-semibold mb-4 text-center my-3">Your Application Checklist</h2>
+  <p class="text-center mb-5 px-4 md:px-0 text-sm md:text-base">Texila accepts transfer applications for the MD and Premed programs. Continue your education, become a Doctor.</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+  <div class="bg-[#16418E] text-white p-8 md:p-12">
+    <img src={icon1.src} alt="Icon 1" class="h-12 w-auto mb-4">
+    <h3 class="text-xl mb-3 text-[#FFE44D]">Complete an Application</h3>
+    <p class="text-lg mb-7">Apply as a transfer.</p>
+    <p class="text-sm md:text-base leading-loose">Provide all the pertinent information about your medical history and other educational background.</p>
+  </div>
+
+  <!-- Column 2 -->
+  <div class="bg-[#3664B7] text-white p-8 md:p-12">
+    <img src={icon2.src} alt="Icon 2" class="h-12 w-auto mb-4">
+    <h3 class="text-xl mb-3 text-[#FFE44D]">Submit Transcripts</h3>
+    <p class="text-lg mb-5">From all institutions attended.</p>
+    <p class="text-sm md:text-base leading-loose">We consider all applications and multiple attempts on boards as part of the evaluation.</p>
+  </div>
+
+  <!-- Column 3 -->
+  <div class="bg-[#16418E] text-white p-8 md:p-12">
+    <img src={icon3.src} alt="Icon 3" class="h-12 w-auto mb-4">
+    <h3 class="text-xl mb-3 text-[#FFE44D]">USMLE Attempts</h3>
+    <p class="text-lg mb-5">Share your score reports.</p>
+    <p class="text-sm md:text-base leading-loose">Applicants must submit all score reports (official) of all attempts at the board examinations.</p>
+  </div>
+
+  <!-- Column 4 -->
+  <div class="bg-[#3664B7] text-white p-8 md:p-12">
+    <img src={icon4.src} alt="Icon 4" class="h-12 w-auto mb-4">
+    <h3 class="text-xl mb-3 text-[#FFE44D]">Admission Process</h3>
+    <p class="text-lg mb-5">Submit all documents.</p>
+    <p class="text-sm md:text-base leading-loose">Complete an application, submit your personal statement, resume or CV, and Letters of recommendation</p>
+  </div>
+  </div>
+</section>
+</Layout> 

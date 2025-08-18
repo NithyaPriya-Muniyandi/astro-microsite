@@ -1,0 +1,107 @@
+---
+import Logo from '../assets/logo.webp';
+
+const currentPath = Astro.url.pathname;
+
+const origin = Astro.url.origin;
+const baseUrl = `${origin}/gy/caribbean-medical-schools/`;
+
+const links = [
+  { href: `${baseUrl}`, label: "Why TAU", path: "/gy/caribbean-medical-schools/" },
+  { href: `${baseUrl}academics`, label: "Academics", path: "/gy/caribbean-medical-schools/academics" },
+  { href: `${baseUrl}admissions`, label: "Admissions", path: "/gy/caribbean-medical-schools/admissions" },
+  { href: `${baseUrl}tuition-fee`, label: "Tuition & Fees", path: "/gy/caribbean-medical-schools/tuition-fee" },
+  { href: `${baseUrl}contact`, label: "Contact Us", path: "/gy/caribbean-medical-schools/contact" },
+];
+---
+
+<nav class="bg-white shadow fixed w-full z-50 top-0">
+  <div class="max-w-full md:px-16 mx-auto px-4 h-16 flex items-center justify-between">
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <img src={Logo.src} alt="Texila Logo" class="w-auto h-14" />
+    </div>
+
+    <!-- Desktop Nav -->
+    <div class="hidden md:flex space-x-2">
+      {links.map(link => {
+        const isActive = currentPath === link.path;
+        return (
+          <a
+            is:link
+            href={link.href}
+            class={`text-base px-3 py-4 transition duration-200 border-t-2 ${
+              isActive
+                ? "text-gray-700 bg-gradient-to-b from-[#D4D9EE] to-[#D4D9EE00] border-[#16418E]"
+                : "text-gray-700 hover:bg-blue-100 border-transparent"
+            }`}
+          >
+            {link.label}
+          </a>
+        );
+      })}
+    </div>
+
+    <!-- CTA Desktop -->
+    <div class="hidden md:flex">
+      <a href="https://apply.tauedu.org/gy/caribbean-medical-schools/contact/" class="bg-gradient-to-r from-[#3663B6] to-[#16418E] hover:bg-blue-700 border-b-3 border-[#FFE44D] text-white text-sm px-6 py-3 rounded-md flex items-center gap-1">
+        Apply Now
+      </a>
+    </div>
+
+    <!-- Mobile Toggle -->
+    <div class="md:hidden">
+      <button id="nav-toggle" class="text-gray-700 focus:outline-none">
+        <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pb-4">
+    <div class="pt-2 space-y-2">
+      {links.map(link => {
+        const isActive = currentPath === link.path;
+        return (
+          <a
+            href={link.href}
+            class={`block py-2 text-gray-700 text-base ${
+              isActive ? 'font-semibold text-[#2A83E7]' : 'hover:text-[#2A83E7]'
+            }`}
+          >
+            {link.label}
+          </a>
+        );
+      })}
+      <a href={`${baseUrl}contact`} class="bg-gradient-to-r from-[#3663B6] to-[#16418E] hover:bg-blue-700 border-b-3 border-[#FFE44D] text-white text-sm px-6 py-3 rounded-md flex items-center gap-1">
+        Apply Now
+      </a>
+    </div>
+  </div>
+
+  <!-- Announcement Banner -->
+  <div class="bg-[#FFE168] text-black text-xs md:text-base font-semibold text-center flex py-4 items-center justify-center gap-2">
+    <span>Accepting Applications! Apply to Start in September 2025.</span>
+  </div>
+
+  <!-- Toggle Script -->
+  <script is:inline>
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+  </script>
+</nav>

@@ -1,17 +1,7 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import videoImg from '../assets/videoimg.webp';
-import playbtn from '../assets/video-play.webp';
-import caamhp from '../assets/caamhp.webp';
-import accm from '../assets/accm.webp';
-import salliemae from '../assets/salliemae.webp';
-import osap from '../assets/osap.webp';
-import iconarrow from '../assets/iconarrow.webp';
+import Layout from "../layouts/Layout.astro";
+import contactbanner from "../assets/contactbanner.webp"; 
 import formcircle from '../assets/formcircle.webp';
-import iconPrev from '../assets/carousel.webp';
-import bacc from '../assets/bac.webp';
-import taucampus from '../assets/taucampus.webp';
-import homeVideo from "../assets/homevideo.mp4"; // ✅ import video
 
 const countries = [
 	{ id: 1, name: "Afghanistan (+93)", parent_id: 0 },
@@ -221,127 +211,30 @@ const countries = [
 { id: 206, name: "Zimbabwe (+263)", parent_id: 0 }
 ];
 
-const bigValues = [
-  '+80%', '+90%', '+90%', 'ACCM', 'BAC', 'CAAM-HP',
-  '+94%', '8:1', 'Transfer', 'Clinicals', 'Careers',
-  '+90%', 'SallieMae', 'OSAP', 'Awards'
-];
-
-const labelValues = [
-  'U.S. Residency Placement Rate.',
-  'USMLE Step 1 Pass rate',
-  'USMLE Step 2 CK Pass rate',
-  'Accredited by',
-  'Accredited by',
-  'Accredited by',
-  'Student Retention Rate.',
-  'Low Student-to-Faculty Ratio',
-  'Your education',
-  'U.S. and Guyana.',
-  'Global Opportunities',
-  'USMLE Step 2 CK Pass rate',
-  'Approved for U.S. Students',
-  'Approved in Canada',
-  '& Scholarships'
-];
-
-const subValues = [
-  'Path to Practice.',
-  'Strong Performance.',
-  'Consistent Performance.',
-  '',
-  '',
-  '',
-  'Texila Experience.',
-  'Personal Attention.',
-  'Don’t miss a step.',
-  'Competitive Learning.',
-  'Healthcare mindset.',
-  'Consistent Performance.',
-  '',
-  '',
-  ''
-];
-
-const blurbValues = [
-  'TAU students secure residency placements at teaching hospitals in the U.S. and Canada.',
-  'Our students achieved a remarkable pass rate for the calendar year of 2023.',
-  'Our students achieved a remarkable pass rate for the calendar year of 2023.',
-  'TAU is accredited by the Accreditation Commission on Colleges of Medicine.',
-  'TAU is accredited by the British Accreditation Council.',
-  'TAU is accredited by the Caribbean Accreditation Authority for Education in Medicine and other Health Professions.',
-  'TAU students come from diverse backgrounds and over 35 countries.',
-  'TAU delivers high-quality medical education with individual attention.',
-  'TAU evaluates all transfer applications.',
-  'TAU students complete core and elective rotations at teaching hospitals in the U.S. (Tucson Medical Center) and Guyana (GPHC)',
-  'TAU graduates pursue medical careers in the US, Canada, Guyana, and around the world.',
-  'Our students achieved a remarkable pass rate for the calendar year of 2023.',
-  'TAU is an approved institution for Sallie Mae’s Medical School Loan.',
-  'TAU is an approved institution for the Ontario Student Assistance Program. Check the other provincial lists in Canada.',
-  'TAU offers many merit-based awards and scholarships for qualified students who attend the program.'
-];
-
-const cards = bigValues.map((big, i) => ({
-  big,
-  label: labelValues[i],
-  sub: subValues[i],
-  blurb: blurbValues[i]
-}));
-
 ---
 
 <Layout>
+<section class="relative w-full mt-10 pt-12 bg-no-repeat h-auto object-contain bg-cover bg-white md:bg-transparent contact-section">
 
-<!-- banner section -->
-
-<section class="relative w-full pt-12 bg-no-repeat h-auto object-contain bg-cover bg-white md:bg-transparent hero-section">
 
   <div class="mx-auto">
     <div class="grid md:grid-cols-3 items-center">
       
       <!-- Column 1: Banner Content -->
-      <div class="space-y-4 text-left md:ml-15 ml-0">
-        <h2 class="text-[#16418E] pl-4 md:pl-0 mt-8 font-semibold text-xl md:text-4xl leading-snug  leading-snug text-shadow-custom">
-          Strong Performance.<br>
-          Path to Residency.
-        </h2>
-     <p class="text-[#212020] pl-4 md:pl-0 mt-6 text-sm md:text-2xl md:font-semibold w-[60%] md:w-[95%]">
-  Accredited, Affordable Education. 
-  <span class="hidden md:inline"><br></span>
-  For Students. For Doctors.
-</p>
-
-
-<p class="bg-[#D4D9EE] border-r-4 md:border-r-0 pl-4 text-sm mt-[34px] md:text-base py-2 px-2 border-l-4 border-[#3664B7] text-start md:bg-none md:[background:linear-gradient(to_right,#D4D9EE,#D4D9EE00)]">
-  TAU students are trained with the skills and experiences needed to succeed as a physician. Our MD program offers two flexible start dates: <strong>March</strong> and <strong>September</strong>.
-</p>
-
-
-<div class="flex flex-row justify-center items-center md:items-start md:justify-start gap-4 my-8">
-  <!-- Apply Now Button -->
-  <a
+     <div class="text-[#16418E] md:text-white max-w-xl md:ml-15 ml-0  pl-4 md:pl-0 mt-8 ">
+        <h1 class="text-xl md:text-4xl w-[60%] md:w-[95%] font-semibold mb-4 leading-relaxed text-shadow-custom">
+          Texila is here to help You Succeed
+        </h1>
+  
+        <a
     href="https://apply.tauedu.org/gy/caribbean-medical-schools/contact/"
-    class="inline-flex items-center gap-1 bg-gradient-to-r from-[#3663B6] to-[#16418E] hover:brightness-105 text-white border-b-4 border-[#FFE44D] text-base px-6 py-3 rounded-md"
+    class="inline-flex my-8 items-center gap-1 bg-gradient-to-r from-[#FFE44D] to-[#F3CF3F] hover:brightness-105 text-[#16418E] border-b-4 border-[#FFE44D] text-base px-6 py-3 rounded-md"
   >
-    Apply Now
+    Schedule a Call
   </a>
-
-  <!-- Schedule a Call Button -->
-  <a
-    href="https://apply.tauedu.org/gy/caribbean-medical-schools/contact/"
-    class="inline-flex items-center gap-1 bg-gradient-to-r from-[#FFE44D] to-[#F3CF3F] border-b-4 border-[#3664B7] hover:brightness-105 text-base px-6 py-3 rounded-md"
-  >
-    <span class="text-[#16418E] font-medium">Schedule a Call</span>
-  </a>
-</div>
-
-
       </div>
 
-      <!-- Column 2: Empty/Spacer -->
       <div></div>
-
-      <!-- Column 3: Form -->
 
 
 <section class="relative bg-[#16418E] max-w-3xl mx-auto shadow-lg py-6"  id="apply-form">
@@ -349,7 +242,7 @@ const cards = bigValues.map((big, i) => ({
   <img src={formcircle.src} alt="Circle" class="absolute right-6 w-8 h-8 md:w-10 md:h-10" />
 
   <!-- Heading -->
-  <h2 class="pl-5 pr-10 pb-6 text-white text-base font-semibold md:text-xl mb-4 bg-gradient-to-b from-[#16418E] to-[#3664B7] text-transparent">
+<h2 class="pl-5 pr-10 pb-6 text-white text-base font-semibold md:text-xl mb-4 bg-gradient-to-b from-[#16418E] to-[#3664B7] text-transparent">
 Connect with Texila
   </h2>
 
@@ -516,8 +409,7 @@ window.onload = function () {
   title="Name should contain only letters and spaces"
   class="p-2 text-black text-sm w-full bg-white focus:outline-none focus:ring-2 focus:ring-blue-300"
 />
-
-<input
+  <input
             type="email"
             name="email"
             placeholder="Email"
@@ -525,7 +417,7 @@ window.onload = function () {
             class="p-2 text-black text-sm w-full bg-white focus:outline-none focus:ring-2 focus:ring-blue-300"
           />
 
-           <select
+            <select
             name="country_code"
             required
             class="p-2 text-black text-sm w-full bg-white focus:outline-none focus:ring-2 focus:ring-blue-300"
@@ -538,7 +430,7 @@ window.onload = function () {
             ))}
           </select>
 
-           <input
+            <input
             type="tel"
             name="contact"
             placeholder="Phone"
@@ -571,9 +463,6 @@ window.onload = function () {
             required
             class="p-2 text-black text-sm w-full bg-white focus:outline-none focus:ring-2 focus:ring-blue-300"
           />
-         
-
-          {/* MCAT Dropdown */}
           <select
             name="mcat"
             required
@@ -619,6 +508,8 @@ window.onload = function () {
           </span>
         </label>
 
+        {/* Hidden Fields */}
+
 <input type="hidden" name="url" id="hidden_url" value=""/>
 <input type="hidden" name="ProspectID" value="" />
 <input type="hidden" name="capcha_check" id="capcha_check" value=""/>
@@ -644,7 +535,6 @@ window.onload = function () {
 <input type="hidden" name="utm_campaign" value="" value=""/>
 <input type="hidden" name="utm_module" value="Enquiry form" value=""/>
 
-
         {/* Submit Button */}
         <div class="flex justify-center">
           <button
@@ -663,372 +553,112 @@ window.onload = function () {
   </div>
 </section>
 
+<section class="mt-8 mb-16 md:mt-16 max-w-5xl mx-auto px-2 md:px-0">
+  <h2 class="text-2xl font-semibold md:mb-7 text-center">Meet the Admissions Team</h2>
+  <p class="md:text-center leading-loose my-6 text-sm md:text-base">We’re excited that you’re considering Texila American University for your medical education and are here to help guide you. Whether you have questions about our programs, policies, or the application process, our dedicated admissions team is ready to assist. From understanding your eligibility to exploring scholarships like Sallie Mae loans and Canadian student aid, our dedicated team has the answers you need.</p>
+  <p class="md:text-center leading-loose text-sm md:text-base">Our mission is to support and guide prospective MD students like you on every step of your journey to becoming a physician. We’re here to make the admission process seamless and straightforward, helping you take that first step toward your dream medical career.</p>
+</section>
 
-<!-- Why Choose -->
- <section class="bg-white py-8 md:py-16">
-  <div class="max-w-7xl mx-auto px-4">
-    <!-- Logos row -->
-    <div class="max-w-5xl mx-auto flex flex-wrap justify-center items-center gap-10 md:gap-12 mb-8 bg-[#16418E] py-8 rounded-xl">
-  <img src={caamhp.src} alt="CAAM-HP" class="h-16" />
-  <img src={bacc.src} alt="BACC" class="h-16" />
-  <img src={accm.src} alt="ACCM" class="h-16" />
-  <img src={salliemae.src} alt="Sallie Mae" class="h-16" />
-  <img src={osap.src} alt="OSAP" class="h-16" />
-  </div>
- <div class="text-center mb-10">
-      <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Why Texila in Guyana?</h2>
-      <p class="text-dark text-sm md:text-base max-w-4xl mx-auto mb-8">
-        Texila American University in Guyana offers accredited and affordable medical education and other programs.
-      </p>
-    </div>
-
-    <!-- Carousel -->
-    <div class="relative">
-      <button
-        id="carousel-prev"
-        type="button"
-        class="absolute left-[-15px] top-1/2 -translate-y-1/2 z-40 bg-white/80 hover:bg-white rounded-full p-2 shadow cursor-pointer"
-        aria-label="Previous">
-        <img src={iconPrev.src} alt="Previous" class="h-8 w-8 rotate-180" />
-      </button>
-
-      <button
-        id="carousel-next"
-        type="button"
-        class="absolute right-[-15px] top-1/2 -translate-y-1/2 z-40 bg-white/80 hover:bg-white rounded-full p-2 shadow cursor-pointer"
-        aria-label="Next">
-        <img src={iconPrev.src} alt="Next" class="h-8 w-8" />
-      </button>
-
-      <div class="overflow-hidden">
-          <div id="astro-carousel-track" class="flex transition-transform duration-500 ease-in-out">
-            {cards.map((c, idx) => (
-              <div class="shrink-0 px-2 pt-8 pb-10 w-full sm:w-[33.3333%]" key={idx}>
-                <div class="h-full flex flex-col justify-between relative bg-gradient-to-b from-white to-[#F3F5FF] rounded-xl shadow-md pt-12 pb-12 px-6 border border-[#D9D9D9] text-center">
-                  <h2 class="absolute -top-5 left-1/2 -translate-x-1/2 px-2 bg-white text-[#2F2E67] text-2xl md:text-4xl font-semibold z-30 pointer-events-none">
-                    {c.big}
-                  </h2>
-                  <div>
-                    <h3 class="font-semibold text-lg text-[#2F2E67] mb-2">{c.label}</h3>
-                    <p class="text-[#2F2E67] mb-2 text-sm md:text-base">{c.sub}</p>
-                    <p class="text-sm text-gray-700 mb-4 leading-relaxed">{c.blurb}</p>
-                  </div>
-                  <img
-                    src={iconarrow.src}
-                    alt="Arrow"
-                    class="absolute -bottom-6 left-1/2 -translate-x-1/2 h-12 z-30 pointer-events-none"
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
+<section class="bg-[#F4F5FB]">
+  <div class="max-w-7xl mx-auto px-4 md:px-0 py-8 md:py-16">
+    <div class="relative mt-8 max-w-5xl mx-auto">
+      <div class="absolute left-1/2 -top-27 md:-top-35 -translate-x-1/2"> <div class="bg-[#3664B7] text-white text-lg font-medium rounded-t-lg md:px-12 px-8 py-2">
+      Contact
       </div>
+    </div>
+    
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+    <!-- Card 1 -->
+    <div class="p-4 border-l-3 border-[#3664B7] bg-gradient-to-r from-[#FFFFFF] to-transparent">
+      <h3 class="text-lg font-semibold mb-2">Alnar Damani</h3>
+      <p class="text-sm mb-2">Senior Associate Director of Admissions, USA and Canada</p>
+    <div class="flex flex-col sm:flex-row items-start gap-4">
+  <!-- Phone Numbers -->
+  <div class="flex flex-col">
+    <a href="tel:+12143558546" class="text-blue-500 hover:text-blue-700">
+      📞 +1 (214) 355-8546
+    </a>
+    <a href="tel:+17322794472" class="text-blue-500 hover:text-blue-700">
+      📞 +1 (732) 279-4472
+    </a>
+  </div>
+
+  <!-- Email -->
+  <a href="mailto:alnar.d@tau.edu.gy" class="text-blue-500 hover:text-blue-700">
+    📧 alnar.d@tau.edu.gy
+  </a>
+</div>
+
 
     </div>
 
-    <div class="flex justify-center mt-6 md:mt-12">
+    <!-- Card 2 -->
+    <div class="p-4 border-l-3 border-[#3664B7] bg-gradient-to-r from-[#FFFFFF] to-transparent">
+      <h3 class="text-lg font-semibold mb-2">Dr. Nisarg Patel, M.D.</h3>
+      <p class="text-sm mb-2">Director of Admissions, USA and Canada</p>
+    <div class="flex flex-col sm:flex-row items-start gap-4">
+  <!-- Phone numbers stacked vertically -->
+  <div class="flex flex-col">
+    <a href="tel:+12144325458" class="text-blue-500 hover:text-blue-700">
+      📞 +1 (214) 432-5458
+    </a>
+    <a href="tel:+17322262651" class="text-blue-500 hover:text-blue-700">
+      📞 +1 (732) 226-2651
+    </a>
+  </div>
+
+  <!-- Email -->
+  <a href="mailto:nisarg.patel@tau.edu.gy" class="text-blue-500 hover:text-blue-700">
+    📧 nisarg.patel@tau.edu.gy
+  </a>
+</div>
+
+  </div>
+  </div>
+
+    <!-- Card 3 -->
+    <div class="flex justify-center">
+  <div class="bg-white p-4 rounded-lg shadow-md text-center border border-[#3664B7] inline-block">
+    <h3 class="text-lg font-semibold mb-2">Admissions Team</h3>
+    <a href="tel:+1-214-245-1565" class="text-blue-500 hover:text-blue-700">+1-214-245-1565</a>
+    <a href="mailto:admissions@tau.edu.org" class="text-blue-500 hover:text-blue-700 ml-2">admissions@tau.edu.org</a>
+  </div>
+</div>
+
+
+    <!-- Card 4 -->
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+    <!-- Card 1 -->
+    <div class="p-4 border-l-3 border-[#3664B7] bg-gradient-to-r from-[#FFFFFF] to-transparent">
+      <h3 class="text-lg font-semibold mb-2">USA Office</h3>
+      <p class="text-sm mb-2">Suite 206, 6860 North Dallas Parkway, <br>Plano, Texas 75024 <br>USA</p>
+       <a href="tel:+1 (214) 432-5458" class="text-blue-500 hover:text-blue-700">
+      📞 +1 (214) 432-5458
+    </a>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="p-4 border-l-3 border-[#3664B7] bg-gradient-to-r from-[#FFFFFF] to-transparent">
+      <h3 class="text-lg font-semibold mb-2">Guyana University Campus</h3>
+      <p class="text-sm mb-2">Lot 24 Plantation Providence <br>East Bank Demerara <br>  Guyana</p>
+      <a href="tel: +592 265-7653" class="text-blue-500 hover:text-blue-700 pr-3">
+      📞 +592 265-7653  
+    </a>
+      <a href="tel:+592 265-7655" class="text-blue-500 hover:text-blue-700">
+      📞+592 265-7655
+    </a>
+
+    </div>
+  </div>
+  <div class="mt-8 text-center">
       <a
-        href="https://apply.tauedu.org/gy/caribbean-medical-schools/academics/"
-        class="inline-flex items-center gap-1 bg-gradient-to-r from-[#3663B6] to-[#16418E] hover:bg-blue-700 text-white text-sm px-6 py-3 rounded-lg border-b-3 border-[#FFE44D]"
-      >
-        Learn More
-      </a>
-    </div>
+    href="https://apply.tauedu.org/gy/caribbean-medical-schools/contact/"
+    class="inline-flex mt-8 items-center gap-1 bg-gradient-to-r from-[#3663B6] to-[#16418E] hover:brightness-105 text-white border-b-4 border-[#FFE44D] text-base px-6 py-3 rounded-md"
+  >
+    Schedule a Call
+  </a>
   </div>
-
-<script is:inline>
-  window.onload = function () {
-    const track = document.getElementById('astro-carousel-track');
-    const totalCards = track ? track.children.length : 0;
-
-    let visibleCards = 3;
-    let currentSlide = 0;
-    let totalSlides = 0;
-    let timer;
-
-    function updateSettings() {
-      visibleCards = window.innerWidth < 768 ? 1 : 3;
-      totalSlides = Math.ceil(totalCards / visibleCards);
-      currentSlide = 0;
-      slideTo(currentSlide);
-    }
-
-    function slideTo(slideIndex) {
-      if (!track) return;
-      const percentage = slideIndex * 100;
-      track.style.transform = `translateX(-${percentage}%)`;
-    }
-
-    function next() {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      slideTo(currentSlide);
-    }
-
-    function prev() {
-      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-      slideTo(currentSlide);
-    }
-
-    function resetTimer() {
-      clearInterval(timer);
-      timer = setInterval(next, 5000);
-    }
-
-    if (track) {
-      updateSettings();
-      resetTimer();
-
-      console.log("Carousel initialized");
-
-      document.getElementById('carousel-next')?.addEventListener('click', () => {
-        next();
-        resetTimer();
-      });
-
-      document.getElementById('carousel-prev')?.addEventListener('click', () => {
-        prev();
-        resetTimer();
-      });
-
-      window.addEventListener('resize', () => {
-        updateSettings();
-        resetTimer();
-      });
-
-      const container = track.parentElement?.parentElement;
-      if (container) {
-        container.addEventListener('mouseenter', () => clearInterval(timer));
-        container.addEventListener('mouseleave', resetTimer);
-      }
-    }
-  };
-</script>
-</section>
-
-<!-- taucampus -->
- <section  class="bg-white pb-8 md:pb-16">
-  <div class="max-w-7xl mx-auto px-4 md:flex gap-6">
-    <img src={taucampus.src} alt='taucampus' class="md:w-[50%] md:h-[50%]"/>
-    <div>
-<h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4 text-center md:text-start">Welcome to <br>Texila American University</h2>
-<p class="md:leading-loose text-sm md:text-base">Where your journey to becoming a physician begins. We offer an affordable pathway to your MD degree with a clear route to practicing medicine in the United States or Canada.</p>
-<p class="my-4 md:my-8 text-sm md:text-base md:leading-loose">As a globally accredited institution by CAAM-HP, BAC, and ACCM, we provide a world-class education with a proven track record of success, demonstrated by our 90%+ USMLE pass rates and an 80% U.S. residency placement rate since 2015. Our students gain invaluable hands-on experience through guaranteed clinical rotations in the USA or Guyana and benefit from accessible funding options, including Sallie Mae Medical School Loans for U.S. students and provincial aid for Canadians.</p>
-<p class="md:leading-loose text-sm md:text-base">We invite you to explore our programs and discover how Texila can be the launchpad for your successful medical career.</p>
-    </div>
-   
   </div>
-
- </section>
-
-<!-- percentage -->
- <section class="bg-[#16418E] text-white py-8 md:py-16">
-  <div class="max-w-5xl mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-      <!-- Column 1 -->
-      <div>
-        <h1 class="text-[#FFE44D] text-2xl md:text-5xl font-semibold mb-2">90%</h1>
-        <p class="text-sm leading-relaxed ">USMLE Step 1 Pass Rate <br>(2022-2023 Data)</p>
-      </div>
-
-      <!-- Column 2 -->
-      <div>
-        <h1 class="text-[#FFE44D] text-2xl md:text-5xl font-semibold mb-2">94%</h1>
-        <p class="text-sm leading-relaxed">USMLE Step 2 Pass Rate <br>(2022-2023 Data)</p>
-      </div>
-
-      <!-- Column 3 -->
-      <div>
-        <h1 class="text-[#FFE44D] text-2xl md:text-5xl font-semibold mb-2">84%</h1>
-        <p class="text-sm leading-relaxed">US Residency Placement <br>Rate (Since 2015)</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- video section -->
-<section class="bg-[#EBEDF8] pt-8 md:pt-16">
-  <div class="max-w-4xl mx-auto px-4 text-center">
-    <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
-      Alumni Spotlight at Texila
-    </h2>
-
-    <p class="text-sm md:text-base mb-8">
-      Discover the Caribbean Medical School experience through students and alumni! Learn more about the campus, clinicals, and more.
-    </p>
-
-    <!-- Video Embed -->
-    <div class="w-full mb-8">
-      <div class="relative w-full md:w-3/4 mx-auto aspect-video">
-        <!-- Thumbnail with play button -->
-        <div id="videoThumbnail" class="absolute top-0 left-0 w-full cursor-pointer">
-          <img
-            src={videoImg.src}
-            alt="Video Thumbnail"
-            class="w-full h-full object-contain rounded-md shadow-lg"
-          />
-          <img
-            src={playbtn.src}
-            alt="Play Button"
-            class="absolute top-1/2 left-1/2 w-16 h-16 transform -translate-x-1/2 -translate-y-1/2 z-20"
-          />
-        </div>
-
-        <!-- Local video (hidden initially) -->
-        <video
-          id="localVideo"
-          class="absolute top-0 left-0 w-full h-full rounded-md shadow-lg hidden"
-          controls
-        >
-          <source src={homeVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <div class="flex justify-center mt-6">
-        <a
-          href="https://apply.tauedu.org/gy/caribbean-medical-schools/contact/"
-          class="inline-flex items-center gap-1 bg-gradient-to-r from-[#3663B6] to-[#16418E] hover:brightness-105 text-white border-b-4 border-[#FFE44D] text-base px-6 py-3 rounded-md"
-        >
-          Schedule a Call
-        </a>
-      </div>
-    </div>
-
-    <script is:inline>
-      const thumbnail = document.getElementById("videoThumbnail");
-      const video = document.getElementById("localVideo");
-
-      thumbnail.addEventListener("click", () => {
-        thumbnail.classList.add("hidden");
-        video.classList.remove("hidden");
-        video.play(); // autoplay local video
-      });
-    </script>
-  </div>
-</section>
-
-  <!-- FAQ -->
-<section class="w-full bg-white px-4 py-8 md:py-16">
-  <div class="max-w-3xl mx-auto">
-    <h2 class="text-2xl md:text-3xl font-semibold text-center text-dark mb-4 md:mb-8">
-      Frequently Asked Questions
-    </h2>
-
-    <div class="space-y-4">
-      {[
-        {
-          question: 'Can I practice in Canada?',
-          answer: 'Yes. Graduates of Texila American University are eligible for ECFMG Certification, which is a key requirement for applying for medical licensure and residency positions in Canada.'
-        },
-       
-        {
-          question: 'Can I practice in the USA?',
-          answer: 'Yes. Our program is specifically designed to prepare students for this path. Graduates are eligible to take the USMLE exams and apply for residency in the United States. We have had an 80% US Residency Placement Rate since 2015.'
-        },
-        {
-          question: 'Can I practice in the UK?',
-          answer: "Yes, graduates are eligible to take the UK's Professional and Linguistic Assessments Board (PLAB) test. Because Texila is listed in the World Directory of Medical Schools, our degree is recognized by the UK's General Medical Council (GMC), making you eligible for the licensure pathway."
-        },
-        {
-          question: 'Does TAU have a minimum credit requirement for the MD program?',
-          answer: "Yes. To be eligible for the MD program, applicants must have completed a bachelor's degree or the equivalent of at least 90 credit hours of undergraduate-level coursework, including the required pre-medical science courses."
-        },
-        {
-          question: 'How long is the MD program after completing Premed?',
-          answer: 'The Doctor of Medicine (MD) program is four years long. It is divided into two years of Basic Sciences followed by two years of Clinical Rotations.'
-        },
-        {
-          question: 'When can I apply?',
-          answer: 'You can apply now! We have a rolling admissions policy for our spring (March) and fall (September) intakes. The final deadline for the September 2025 intake is mid-August, so we encourage you to apply soon.'
-        },
-        {
-          question: 'Where is the Texila campus?',
-          answer: 'Our main College of Medicine campus is located in Georgetown, Guyana.'
-        },
-        {
-          question: 'What are clinical rotations?',
-          answer: 'Clinical rotations are the final two years of the MD program where students receive hands-on training in hospitals and clinical settings. You will rotate through core specialties like Internal Medicine, Surgery, Pediatrics, and Psychiatry to apply your academic knowledge to real-world patient care.'
-        },
-        {
-          question: 'Where are clinical rotations offered?',
-          answer: 'We offer clinical rotations primarily at our network of affiliated teaching hospitals in the United States. This provides students with critical U.S. Clinical Experience (USCE), which strengthens residency applications.'
-        },
-        {
-          question: 'What is the USMLE performance?',
-          answer: 'Our students consistently perform well on the board exams. For 2022-2023, we had a 90% USMLE Step 1 Pass Rate and a 94% USMLE Step 2 Pass Rate.'
-        },
-        {
-          question: 'What is the residency placement rate?',
-          answer: 'Texila American University has an 80% US Residency Placement Rate for our graduates since 2015.'
-        },
-        {
-          question: 'What accreditations does Texila have?',
-          answer: 'TAU is accredited by the National Accreditation Council of Guyana (NACG). Our MD program also holds programmatic accreditations from the Caribbean Accreditation Authority for Education in Medicine and other Health Professions (CAAM-HP) and the Accreditation Commission on Colleges of Medicine (ACCM).'
-        },
-        {
-          question: 'What is the student-to-faculty ratio?',
-          answer: 'We pride ourselves on a low student-to-faculty ratio. Our small class sizes ensure that students receive personalized attention, mentorship, and direct access to our highly qualified faculty.'
-        },
-        {
-          question: 'How many weeks are clinical rotations?',
-          answer: 'The clinical rotation phase consists of approximately 76 weeks of training spread across the final two years of the MD program.'
-        },
-        {
-          question: 'Can U.S. and Canadian students get loans to attend Texila?',
-          answer: 'Yes. We are an approved institution for private student loans through lenders like Sallie Mae for our U.S. students. Our Canadian students are eligible for various provincial student aid programs, such as the Ontario Student Assistance Program (OSAP).'
-        },
-        {
-          question: 'What are the key requirements to apply to the MD program?',
-          answer: "The key requirements are a completed bachelor's degree (minimum 90 credits) with pre-medical coursework (including Biology, Chemistry, and Physics), a personal statement detailing your motivation for medicine, and letters of recommendation."
-        },
-        {
-          question: 'What is the total tuition for the 4-Year MD program?',
-          answer: 'The total tuition for the entire four-year MD program is $115,000 USD.'
-        }
-       ].map(({ question, answer }, index) => (
-        <div class="border border-[#555497] rounded-md bg-white">
-          <button
-            type="button"
-            class="w-full px-4 py-3 flex justify-between items-center cursor-pointer text-sm md:text-base text-left text-gray-800 focus:outline-none faq-toggle"
-            onclick={`toggleFAQ(${index})`}
-          >
-            <span>{question}</span>
-            <svg
-              class="w-5 h-5 text-[#555497] transition-transform transform rotate-0 faq-arrow"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div id={`faq-${index}`} class="hidden px-4 pb-4 text-gray-600 text-sm">
-            {answer}
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-
-  <script is:inline>
-    function toggleFAQ(index) {
-      document.querySelectorAll('.faq-toggle').forEach((button, i) => {
-        const answer = document.getElementById(`faq-${i}`);
-        const arrow = button.querySelector('.faq-arrow');
-        const isCurrent = i === index;
-
-        if (isCurrent) {
-          const isOpen = !answer.classList.contains('hidden');
-          answer.classList.toggle('hidden', isOpen);
-          arrow.classList.toggle('rotate-180', !isOpen);
-        } else {
-          answer.classList.add('hidden');
-          arrow.classList.remove('rotate-180');
-        }
-      });
-    }
-  </script>
 </section>
 
 </Layout>
